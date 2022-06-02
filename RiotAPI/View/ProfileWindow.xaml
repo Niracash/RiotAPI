@@ -1,0 +1,73 @@
+﻿<Window x:Class="RiotAPI.View.ProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiotAPI.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="#FF101010">
+    <Grid>
+        <Border Margin="20">
+            <StackPanel>
+
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                    <Border Width="100" Height="100" Margin="20" BorderThickness="2" BorderBrush="White">
+                        <Border.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="{Binding Path = Icon}"/>
+                        </Border.Background>
+                    </Border>
+                </StackPanel>
+                <TextBlock Text="{Binding Path=SummonerName}" Foreground="White" FontSize="30" FontWeight="Bold" Width="430"></TextBlock>
+                <StackPanel Orientation="Horizontal">
+
+                    <StackPanel Margin="20">
+                        <TextBlock FontSize="14" FontWeight="Bold" Text="Victory: " Foreground="LightGreen"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="20">
+                        <TextBlock FontSize="14" Text="{Binding Path=Wins}" Foreground="LightGreen"></TextBlock>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+
+                    <StackPanel Margin="20">
+                        <TextBlock FontSize="14" FontWeight="Bold" Text="Defeat: " Foreground="LightGreen"/>
+                    </StackPanel>
+                    <StackPanel Margin="20">
+                        <TextBlock FontSize="14" Text="{Binding Path=Losses}" Foreground="LightGreen"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel HorizontalAlignment="right">
+                    <StackPanel Margin="80 40">
+                        <TextBlock FontSize="20" FontWeight="Bold" Text="LEVEL:" Foreground="White"></TextBlock>
+                        <TextBlock FontSize="50" Text="{Binding Path=Level}" Foreground="White"></TextBlock>
+
+                    </StackPanel>
+
+                </StackPanel>
+                <Grid Margin="30 20">
+                    <Button x:Name="MenuButton" HorizontalAlignment="Left" Width="100" BorderThickness="2" Content="Menu" BorderBrush="White" Click="MenuButton_Click"/>
+
+                    <Button HorizontalAlignment="Right" Width="100" BorderThickness="2" BorderBrush="White" Content="Exit" Background="Red"></Button>
+                </Grid>
+            </StackPanel>
+
+        </Border>
+        <StackPanel HorizontalAlignment="Right">
+            <Image Source="{Binding Path=Emblem}" Width="150" Height="150">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                <TextBlock FontSize="18" Foreground="White" Text="{Binding Path=Tier}" FontWeight="Bold" Margin="5" VerticalAlignment="Center"></TextBlock>
+                <TextBlock FontSize="18" Foreground="White" Text="{Binding Path=Rank}" FontWeight="Bold" Margin="5" VerticalAlignment="Center"></TextBlock>
+
+
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
