@@ -50,17 +50,13 @@
                 <Grid Margin="30 20">
                     <Button x:Name="MenuButton" HorizontalAlignment="Left" Width="100" BorderThickness="2" Content="Menu" BorderBrush="White" Click="MenuButton_Click"/>
 
-                    <Button HorizontalAlignment="Right" Width="100" BorderThickness="2" BorderBrush="White" Content="Exit" Background="Red"></Button>
+                    <Button HorizontalAlignment="Right" Width="100" BorderThickness="2" BorderBrush="White" Content="Exit" Background="Red" Click="ExitButton_Click"></Button>
                 </Grid>
             </StackPanel>
 
         </Border>
         <StackPanel HorizontalAlignment="Right">
-            <Image Source="{Binding Path=Emblem}" Width="150" Height="150">
-                <Image.Effect>
-                    <DropShadowEffect/>
-                </Image.Effect>
-            </Image>
+            <Image Source="{Binding Path=RankIcon}" Width="150" Height="150"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
                 <TextBlock FontSize="18" Foreground="White" Text="{Binding Path=Tier}" FontWeight="Bold" Margin="5" VerticalAlignment="Center"></TextBlock>
                 <TextBlock FontSize="18" Foreground="White" Text="{Binding Path=Rank}" FontWeight="Bold" Margin="5" VerticalAlignment="Center"></TextBlock>

@@ -8,22 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Img\Resources\Emblem_Bronze.png" />
-    <None Remove="Img\Resources\Emblem_Challenger.png" />
-    <None Remove="Img\Resources\Emblem_Diamond.png" />
-    <None Remove="Img\Resources\Emblem_Gold.png" />
-    <None Remove="Img\Resources\Emblem_Grandmaster.png" />
-    <None Remove="Img\Resources\Emblem_Iron.png" />
-    <None Remove="Img\Resources\Emblem_Master.png" />
-    <None Remove="Img\Resources\Emblem_Platinum.png" />
-    <None Remove="Img\Resources\Emblem_Silver.png" />
-    <None Remove="Img\riotlogo.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Img\Resources\Emblem_IRON.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <None Remove="Img\Ranks\Rank=BRONZE.png" />
+    <None Remove="Img\Ranks\Rank=CHALLENGER.png" />
+    <None Remove="Img\Ranks\Rank=DIAMOND.png" />
+    <None Remove="Img\Ranks\Rank=EMERALD.png" />
+    <None Remove="Img\Ranks\Rank=GOLD.png" />
+    <None Remove="Img\Ranks\Rank=GRANDMASTER.png" />
+    <None Remove="Img\Ranks\Rank=IRON.png" />
+    <None Remove="Img\Ranks\Rank=MASTER.png" />
+    <None Remove="Img\Ranks\Rank=PLATINUM.png" />
+    <None Remove="Img\Ranks\Rank=SILVER.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,33 +26,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Img\Resources\Emblem_BRONZE.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_CHALLENGER.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_DIAMOND.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_GOLD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_GRANDMASTER.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_MASTER.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_PLATINUM.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\Resources\Emblem_SILVER.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Img\riotlogo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Img\Ranks\Rank=BRONZE.png" />
+    <Resource Include="Img\Ranks\Rank=CHALLENGER.png" />
+    <Resource Include="Img\Ranks\Rank=DIAMOND.png" />
+    <Resource Include="Img\Ranks\Rank=GOLD.png" />
+    <Resource Include="Img\Ranks\Rank=GRANDMASTER.png" />
+    <Resource Include="Img\Ranks\Rank=IRON.png" />
+    <Resource Include="Img\Ranks\Rank=MASTER.png" />
+    <Resource Include="Img\Ranks\Rank=PLATINUM.png" />
+    <Resource Include="Img\Ranks\Rank=SILVER.png" />
+    <Resource Include="Img\Ranks\Rank=EMERALD.png" />
   </ItemGroup>
 
   <ItemGroup>
